@@ -1,13 +1,13 @@
 apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
-  name: springboot-template
-  title: Spring Boot gRPC Service
-  description: Create a simple microservice using gRPC and Spring Boot Java
+  name: docker-template
+  title: docker nginx applcation
+  description: Create a simple microservice using docker and nginx
   tags:
     - recommended
-    - java
-    - grpc
+    - docker
+    - nginx
 spec:
   owner: service@example.com
   type: service
@@ -16,7 +16,7 @@ spec:
       required:
         - component_id
         - owner
-        - java_package_name
+        - docker
       properties:
         component_id:
           title: Name
@@ -26,7 +26,7 @@ spec:
         java_package_name:
           title: Java Package Name
           type: string
-          description: Name for the java package. eg (io.backstage.blah)
+          description: Name for the docker. eg (io.backstage.blah)
         description:
           title: Description
           type: string

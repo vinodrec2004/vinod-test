@@ -16,7 +16,7 @@ spec:
         - name
       properties:
         name:
-          title: Name
+          title: docker nginx
           type: string
           description: docker nginx
           ui:autofocus: true

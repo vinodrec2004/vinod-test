@@ -42,6 +42,6 @@ spec:
       name: Fetch Base
       action: fetch:template
       input:
-        url: ./nginx
+        url: ./NGINX
         values:
           name: ${{ parameters.name }}
